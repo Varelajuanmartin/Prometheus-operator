@@ -1,0 +1,15 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PodMonitor
+metadata:
+  name: front-end
+  labels:
+    name: front-end
+spec:
+  namespaceSelector:
+    matchNames:
+      - sock-shop
+  selector:
+    matchLabels:
+      name: front-end
+  podMetricsEndpoints:
+  - targetPort: 8079
