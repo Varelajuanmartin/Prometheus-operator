@@ -1,7 +1,5 @@
 # Prometheus Operator
 
-![My Image](work1.jpg)
-
 ## Step 1 - Prerequisites
 
 Install Kubernetes on Instance
